@@ -1,0 +1,56 @@
+* {
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    background: #5614B0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DBD65C, #5614B0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DBD65C, #5614B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+main {
+    max-width: 250px;
+    margin: 100px auto;
+}
+
+.coin-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.coin {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 5px 0;
+}
+
+.bitcoin-item {
+    background-color: rgb(52, 178, 228);
+}
+
+.dolar-item {
+    opacity: 0;
+    background-color: rgb(7, 129, 68);
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-name: opacity;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}
